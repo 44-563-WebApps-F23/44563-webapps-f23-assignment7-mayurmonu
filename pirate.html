@@ -4,7 +4,6 @@
 <head>
     <title>WA_LAB07</title>
     <style>
-
         #locations,
         #penalty,
         #help {
@@ -14,23 +13,40 @@
             border: 1px solid #a9ec96;
             background-color: rgb(196, 253, 255);
         }
-    
-        .game-field{
+
+        .game-field {
             display: grid;
-            grid-template-columns: repeat(5,1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 5xp;
             width: 300px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+
+        .grid-item {
+            width: 141px;
+            height: 141px;
+            border: 2px solid #dcd9d9;
+        }
+
+        img {
+            max-width: 99%;
+            max-height: 99%;
         }
 
         .location {
             width: 70px;
             height: 70px;
             background-size: cover;
-            background-size: no-repeat;    
+            background-size: no-repeat;
             background-position: center;
             border: 1px solid #98ec96;
         }
-        
     </style>
 </head>
 
@@ -41,42 +57,99 @@
     <p id="penalty">Penalty is zero</p>
     <p>Click for help</p>
     <p id="help">Help report</p><br>
-    
 
-    <div class="game-field">
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location" id="0" onclick="check(0)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location2" id="1" onclick="check(1)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location3" id="2" onclick="check(2)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location4" id="3" onclick="check(3)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location5" id="4" onclick="check(4)">
+        </div>
+    </div>
 
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location" id="5" onclick="check(5)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location2" id="6" onclick="check(6)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location3" id="7" onclick="check(7)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location4" id="8" onclick="check(8)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location5" id="9" onclick="check(9)">
+        </div>
+    </div>
 
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
+    <div class="grid-container">
 
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location" id="10" onclick="check(10)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location2" id="11" onclick="check(11)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location3" id="12" onclick="check(12)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location4" id="13" onclick="check(13)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location5" id="14" onclick="check(14)">
+        </div>
+    </div>
 
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-        <div class="location" style="background-image: url('god img.jpg');"></div>
-                        
-                        
-     </div>
+    <div class="grid-container">
 
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location" id="15" onclick="check(15)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location2" id="16" onclick="check(16)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location3" id="17" onclick="check(17)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location4" id="18" onclick="check(18)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location5" id="19" onclick="check(19)">
+        </div>
+    </div>
+
+    <div class="grid-container">
+
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location" id="20" onclick="check(20)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location2" id="21" onclick="check(21)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location3" id="22" onclick="check(22)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location4" id="23" onclick="check(23)">
+        </div>
+        <div class="grid-item">
+            <img src="T1.jpg" alt=" Location5" id="24" onclick="check(24)">
+        </div>
+    </div>
 
 
 </body>
