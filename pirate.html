@@ -33,166 +33,61 @@
         }
     </style>
 </head>
-
 <body>
-    <h1>Find the treasure by Mayur Komaravelly</h1>
-    <p>Click on the locations to search for treasure, beware the traps</p>
-    <p id="locations">Number of locations checked is zero</p>
-    <p id="penalty">Penalty is zero</p>
-    <p>Click for help</p>
-    <p id="help">Help report</p><br>
+    <h1 class="text-primary" style="--bs-text-opacity: .5;">Find the treasure by Rachana sri Mandadi</h1><br>
+    <div class="container-fluid">
+      <div class="" id="target">
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location" id="0" onclick="check(0)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location2" id="1" onclick="check(1)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location3" id="2" onclick="check(2)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location4" id="3" onclick="check(3)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location5" id="4" onclick="check(4)">
+        <div class="bg-dark p-2 text-white bg-opacity-25">Click on the locations to search
+            for treasure, beware the traps</div>
+        <div id="locations" class="bg-black p-2 text-black">Number of locations checked is zero</div>
+        <div id="penalty" class="bg-info p-2 text-dark bg-opacity-10">Penalty is zero.</div>
+        <div  class="bg-success p-2 text-dark bg-opacity-50" id="click_help" onclick="help()">Click for help.</div>
+        <div id="help" class="p-3 mb-2 bg-dark-subtle text-emphasis-dark" text-color:orange> Help report:-</div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="image-container">
+            <div class="row">
+                <div class="col-1"><img src="map.jpg" id="0" onclick="check(0)" alt="Position 1" width="100" height="100" id="loc1"></div>
+                <div class="col-1"><img src="map.jpg" id="1" onclick="check(1)" alt="Position 2" width="100" height="100" id="loc2"></div>
+                <div class="col-1"><img src="map.jpg" id="2" onclick="check(2)" alt="Position 3" width="100" height="100" id="loc3"></div>
+                <div class="col-1"><img src="map.jpg" id="3" onclick="check(3)" alt="Position 4" width="100" height="100" id="loc4"></div>
+                <div class="col-1"><img src="map.jpg" id="4"onclick="check(4)" alt="Position 5" width="100" height="100" id="loc5"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><img src="map.jpg" id="5" onclick="check(5)" alt="Position 1" width="100" height="100" id="loc1"></div>
+                <div class="col-1"><img src="map.jpg" id="6" onclick="check(6)"  alt="Position 2" width="100" height="100" id="loc2"></div>
+                <div class="col-1"><img src="map.jpg" id="7" onclick="check(7)" alt="Position 3" width="100" height="100" id="loc3"></div>
+                <div class="col-1"><img src="map.jpg" id="8" onclick="check(8)" alt="Position 4" width="100" height="100" id="loc4"></div>
+                <div class="col-1"><img src="map.jpg" id="9" onclick="check(9)"  alt="Position 5" width="100" height="100" id="loc5"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><img src="map.jpg" id="10" onclick="check(10)"  alt="Position 1" width="100" height="100" id="loc1"></div>
+                <div class="col-1"><img src="map.jpg" id="11" onclick="check(11)" alt="Position 2" width="100" height="100" id="loc2"></div>
+                <div class="col-1"><img src="map.jpg" id="12" onclick="check(12)" alt="Position 3" width="100" height="100" id="loc3"></div>
+                <div class="col-1"><img src="map.jpg" id="13" onclick="check(13)" alt="Position 4" width="100" height="100" id="loc4"></div>
+                <div class="col-1"><img src="map.jpg" id="14" onclick="check(14)" alt="Position 5" width="100" height="100" id="loc5"></div>
+            </div>
+            <div class="row">
+                <div class="col-1"><img src="map.jpg" id="15" onclick="check(15)" alt="Position 1" width="100" height="100" id="loc1"></div>
+                <div class="col-1"><img src="map.jpg" id="16" onclick="check(16)" alt="Position 2" width="100" height="100" id="loc2"></div>
+                <div class="col-1"><img src="map.jpg" id="17" onclick="check(17)" alt="Position 3" width="100" height="100" id="loc3"></div>
+                <div class="col-1"><img src="map.jpg" id="18" onclick="check(18)" alt="Position 4" width="100" height="100" id="loc4"></div>
+                <div class="col-1"><img src="map.jpg" id="19" onclick="check(10)" alt="Position 5" width="100" height="100" id="loc5"></div>
+            </div>
+            <div class="row row-cols-auto">
+                <div class="col-1"><img src="map.jpg" id="20"  onclick="check(20)" alt="Position 1" width="100" height="100" id="loc1"></div>
+                <div class="col-1"><img src="map.jpg" id="21"  onclick="check(21)" alt="Position 2" width="100" height="100" id="loc2"></div>
+                <div class="col-1"><img src="map.jpg" id="22" onclick="check(22)" alt="Position 3" width="100" height="100" id="loc3"></div>
+                <div class="col-1"><img src="map.jpg" id="23" onclick="check(23)" alt="Position 4" width="100" height="100" id="loc4"></div>
+                <div class="col-1"><img src="map.jpg" id="24" onclick="check(24)" alt="Position 5" width="100" height="100" id="loc5"></div>
+            </div>
         </div>
     </div>
+    <div id="button" type="button" class="btn btn-success" onclick="reset()">New Game</div>
+  </body>
 
-    <div class="grid-container">
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location" id="5" onclick="check(5)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location2" id="6" onclick="check(6)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location3" id="7" onclick="check(7)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location4" id="8" onclick="check(8)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location5" id="9" onclick="check(9)">
-        </div>
-    </div>
-
-    <div class="grid-container">
-
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location" id="10" onclick="check(10)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location2" id="11" onclick="check(11)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location3" id="12" onclick="check(12)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location4" id="13" onclick="check(13)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location5" id="14" onclick="check(14)">
-        </div>
-    </div>
-
-    <div class="grid-container">
-
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location" id="15" onclick="check(15)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location2" id="16" onclick="check(16)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location3" id="17" onclick="check(17)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location4" id="18" onclick="check(18)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location5" id="19" onclick="check(19)">
-        </div>
-    </div>
-
-    <div class="grid-container">
-
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location" id="20" onclick="check(20)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location2" id="21" onclick="check(21)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location3" id="22" onclick="check(22)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location4" id="23" onclick="check(23)">
-        </div>
-        <div class="grid-item">
-            <img src="T1.jpg" alt=" Location5" id="24" onclick="check(24)">
-        </div>
-    </div>
-
-    <script>
-
-        checkCount = 0;
-        penalty = 0;
-        lastCheck = 0;
-        treasureLocation = 5;
-        trapLocation = 18,
-            ids = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24"]
-        gameOver = false;
-        function check(position) {
-            if (gameOver) return;
-            const id = ids[position];
-            const image = document.getElementById(id);
-            console.log(image)
-            console.log(id)
-            if (position == treasureLocation) {
-                image.src = "T1.jpg";
-                gameOver = true;
-                penalty -= 3;
-            } else if (position == trapLocation) {
-                image.src = "trap.jpg";
-                gameOver = true;
-                penalty += 4;
-            } else {
-                image.src = "pirate.JPG";
-            }
-            checkCount++;
-            penalty++;
-            document.getElementById("locations").innerHTML = `Locations: ${checkCount}`;
-            document.getElementById("penalty").innerHTML = `Penalty: ${penalty}`;
-            lastCheck = position;
-        }
-        document.getElementById("help_id").onclick = help;
-        function help() {
-            const tresRow = Math.floor(treasureLocation / 5);
-            const tresCol = treasureLocation % 5;
-            const lrow = Math.floor(lastCheck / 5);
-            const lcol = lastCheck % 5;
-            if (
-                Math.abs(tresRow - lrow) + Math.abs(tresCol - lcol) == 1
-            ) {
-                document.getElementById("help_id").innerText = "Can smell it";
-                document.getElementById("help_id").style.color = "red";
-            }
-            else if (
-                Math.abs(tresRow - lrow) + Math.abs(tresCol - lcol) == 2
-            ) {
-                document.getElementById("help_id").innerText = "Close Matie";
-                document.getElementById("help_id").style.color = "orange";
-            } else {
-                document.getElementById("help_id").innerText = "Step Faster";
-                document.getElementById("help_id").style.color = "black";
-            }
-            penalty += 2;
-            document.getElementById("penalty").innerText = `Penalty: ${penalty}`;
-        }
-
-    </script>
     <script>
         let ids =[]
         for(let i=0;i<25;i++)
